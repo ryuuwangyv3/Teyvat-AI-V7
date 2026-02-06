@@ -21,7 +21,7 @@ Web AI Interaktif dengan tema UI/UX Genshin Impact yang mewah. Terminal ini dira
    ```bash
    npm install @supabase/supabase-js lucide-react react-router-dom framer-motion tailwindcss postcss autoprefixer @types/react @types/react-dom
    ```
-   # --- NEXT RUN COMMAND ---
+   ## --- NEXT RUN COMMAND ---
    ```bash
    ./node_modules/.bin/tailwindcss init -p
    
