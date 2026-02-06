@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Efek Tulisan Emas Akasha */
+  .genshin-gold {
+    @apply text-[#d3bc8e] drop-shadow-[0_0_8px_rgba(211,188,142,0.4)];
+  }
+
+  /* Tombol Utama Ala Genshin */
+  .genshin-button {
+    @apply bg-[#ece5d8] hover:bg-[#ffffff] text-[#0b0e14] transition-all duration-300 active:scale-95 disabled:opacity-50;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Panel Transparan Estetik */
+  .genshin-panel {
+    @apply bg-[#13182b]/40 backdrop-blur-md border border-white/5;
+  }
+}
+
+/* Animasi Denyut Irminsul */
+@keyframes irminsul-pulse {
+  0% { box-shadow: 0 0 5px rgba(211, 188, 142, 0.2); border-color: rgba(211, 188, 142, 0.2); }
+  50% { box-shadow: 0 0 15px rgba(211, 188, 142, 0.6); border-color: rgba(211, 188, 142, 0.8); }
+  100% { box-shadow: 0 0 5px rgba(211, 188, 142, 0.2); border-color: rgba(211, 188, 142, 0.2); }
+}
+
+.genshin-panel.latest-msg {
+  animation: irminsul-pulse 2s infinite ease-in-out;
+}
+
+/* --- CUSTOM SCROLLBAR (FIXED) --- */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Default warna emas transparan */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(211, 188, 142, 0.2);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(211, 188, 142, 0.4);
+}
+
+/* Khusus buat Error Log biar merah */
+.bg-red-950\/20.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(220, 38, 38, 0.3);
+}
+
+/* Animasi Tambahan buat Dashboard */
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+.animate-bounce-slow {
+  animation: bounce-slow 3s infinite ease-in-out;
+}

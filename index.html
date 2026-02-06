@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    
+    <title>Akasha Terminal | Teyvat Neural Network</title>
+    <meta name="description" content="Elite AI Neural Network Interface - Akasha System V8">
+    <meta name="theme-color" content="#0b0e14">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --genshin-gold: #d3bc8e;
+            --genshin-gold-glow: rgba(211, 188, 142, 0.45);
+            --genshin-white: #ece5d8;
+            --teyvat-bg-gradient: radial-gradient(circle at center, #1a1f2e 0%, #0b0e14 100%);
+            --shimmer: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+        }
+        
+        * { 
+            -webkit-tap-highlight-color: transparent; 
+            box-sizing: border-box; 
+            scrollbar-width: thin;
+            scrollbar-color: var(--genshin-gold-glow) transparent;
+            /* Cursor paimon itu keren, tapi pastiin link-nya valid atau hapus kalo bikin lag */
+            cursor: url('https://paimon.moe/images/cursor.png'), auto !important;
+            user-select: text;
+        }
+
+        html, body, #root {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #000;
+            font-family: 'Quicksand', sans-serif;
+            color: var(--genshin-white);
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background: var(--teyvat-bg-gradient);
+            z-index: -2;
+        }
+
+        .stars-container {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png');
+            opacity: 0.15;
+            pointer-events: none;
+            animation: drift 180s linear infinite;
+        }
+
+        @keyframes drift {
+            from { background-position: 0 0; }
+            to { background-position: 3000px 3000px; }
+        }
+
+        /* Scrollbar Styling */
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, transparent, var(--genshin-gold), transparent);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="stars-container"></div>
+    <div id="root"></div>
+    
+    <script type="module" src="index.tsx"></script>
+</body>
+</html>
