@@ -1,4 +1,4 @@
-<img src="https://mirror-uploads.trakteer.id/images/content/eml73oyywavr4d9q/ct-htCT0FFlItjxvdHgYsBymFl63ZdxC9r11765727946.jpg" width="200" height="200" style="object-fit: cover; object-position: center top;">
+<img src="https://mirror-uploads.trakteer.id/images/content/eml73oyywavr4d9q/ct-htCT0FFlItjxvdHgYsBymFl63ZdxC9r11765727946.jpg" width="400" height="400" style="object-fit: cover; object-position: center;">
 
 
 
