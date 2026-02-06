@@ -20,12 +20,13 @@ Web AI Interaktif dengan tema UI/UX Genshin Impact yang mewah. Terminal ini dira
 2. Instal dependensi:
    ```bash
    npm install @supabase/supabase-js lucide-react react-router-dom framer-motion tailwindcss postcss autoprefixer @types/react @types/react-dom
-
+   ```
    # --- NEXT RUN COMMAND ---
+   ```bash
    ./node_modules/.bin/tailwindcss init -p
    
    ```
-3. Buat file `.env` di root direktori dan masukkan kunci berikut:
+4. Buat file `.env` di root direktori dan masukkan kunci berikut:
    ```env
    # --- GOOGLE SERVICES & AI ---
    VITE_API_KEY=AIza... (Google Gemini Key)
