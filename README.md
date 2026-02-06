@@ -1,3 +1,5 @@
+![AKASHA](https://mirror-uploads.trakteer.id/images/content/eml73oyywavr4d9q/ct-htCT0FFlItjxvdHgYsBymFl63ZdxC9r11765727946.jpg)
+
 
 # 🌌 Teyvat AI Terminal (Akasha System) V8.0
 
@@ -16,20 +18,30 @@ Web AI Interaktif dengan tema UI/UX Genshin Impact yang mewah. Terminal ini dira
 1. Clone repositori ini.
 2. Instal dependensi:
    ```bash
-   npm install
+   npm install @supabase/supabase-js lucide-react react-router-dom framer-motion tailwindcss postcss autoprefixer @types/react @types/react-dom
+
+   # --- NEXT RUN COMMAND ---
+   ./node_modules/.bin/tailwindcss init -p
+   
    ```
 3. Buat file `.env` di root direktori dan masukkan kunci berikut:
    ```env
    # --- GOOGLE SERVICES & AI ---
-   API_KEY=AIza... (Google Gemini Key)
+   VITE_API_KEY=AIza... (Google Gemini Key)
    
    # --- SUPABASE CLOUD (AUTO-CONNECT) ---
-   SUPABASE_URL=https://your-id.supabase.co
-   SUPABASE_ANON_KEY=eyJh...
+   VITE_SUPABASE_URL=https://your-id.supabase.co
+   VITE_SUPABASE_ANON_KEY=eyJh...
+
+   # --- AUTO SINC TO GITHUB REPOSITORY ---
+   VITE_GITHUB_TOKEN=github_pat_...
    
    # --- OPTIONAL PROVIDERS ---
-   OPENAI_API_KEY=sk-...
-   OPENROUTER_API_KEY=sk-or-...
+   VITE_OPENAI_API_KEY=sk-...
+   VITE_OPENROUTER_API_KEY=sk-or-...
+
+   # --- OPTIONAL PROVIDERS ---
+   VITE_POLLINATIONS_API_KEY=sk-...
    
    # --- GCP SERVICE ACCOUNT (FOR ENTERPRISE FEATURES) ---
    GCP_PROJECT_ID=your-project
