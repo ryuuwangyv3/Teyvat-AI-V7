@@ -1,4 +1,4 @@
-![IMAGE]("https://mirror-uploads.trakteer.id/images/content/eml73oyywavr4d9q/ct-htCT0FFlItjxvdHgYsBymFl63ZdxC9r11765727946.jpg")
+![Logo PNG](https://mirror-uploads.trakteer.id/images/content/eml73oyywavr4d9q/ct-htCT0FFlItjxvdHgYsBymFl63ZdxC9r11765727946.jpg)
 
 
 # 🌌 Teyvat AI Terminal (Akasha System) V8.0
@@ -85,25 +85,25 @@ Hasil build akan berada di folder `dist/`. Aplikasi ini menggunakan sistem **Zer
 3. Masukkan seluruh variabel `.env` ke menu **Site Settings > Environment Variables**.
 
 ### Opsi B: Vercel
-1. Jalankan `vercel` di terminal root.
-2. Pilih default settings.
-3. Tambahkan Environment Variables di dashboard Vercel.
+1. Jalankan ` vercel` di terminal root .
+2. Pilih pengaturan default.
+3. Tambahkan Variabel Lingkungan di dashboard Vercel.
 
 ---
 
-## 🗄️ 5. Inisialisasi Database (SQL Ritual)
+## 🗄️ 5. Inisialisasi Database (Ritual SQL)
 
 Jika Anda baru pertama kali menghubungkan Supabase:
 1. Buka Dashboard Supabase > SQL Editor.
-2. Klik tombol **"Celestial Schema"** di menu **Admin Console** aplikasi web ini.
-3. Copy script SQL yang muncul.
-4. Paste ke SQL Editor Supabase dan klik **RUN**.
-5. Restart aplikasi. Database akan siap menyimpan Memory Chat dan VFS.
+2. Klik tombol ** "Celestial Schema" ** di menu ** Admin Console ** aplikasi web ini.
+3. Salin skrip SQL yang muncul.
+4. Paste ke SQL Editor Supabase dan klik ** RUN ** .
+5. Mulai ulang aplikasi. Database akan siap menyimpan Memory Chat dan VFS.
 
 ---
 
 ## 🛡️ Keamanan & Privasi
-- Seluruh data chat disimpan dengan enkripsi **AES-256** sebelum masuk ke database.
+- Seluruh data chat disimpan dengan enkripsi ** AES-256 ** sebelum masuk ke database.
 - Sistem **Omni-Shield V12.0** aktif secara default untuk mencegah inspeksi kode dan injeksi SQL.
 
 **Created with ❤️ by Akasha Developers. Ad Astra Abyssosque!**
