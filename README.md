@@ -1,4 +1,4 @@
-![AKASHA](https://mirror-uploads.trakteer.id/images/content/eml73oyywavr4d9q/ct-htCT0FFlItjxvdHgYsBymFl63ZdxC9r11765727946.jpg)
+![AKASHA]('https://mirror-uploads.trakteer.id/images/content/eml73oyywavr4d9q/ct-htCT0FFlItjxvdHgYsBymFl63ZdxC9r11765727946.jpg')
 
 
 # 🌌 Teyvat AI Terminal (Akasha System) V8.0
